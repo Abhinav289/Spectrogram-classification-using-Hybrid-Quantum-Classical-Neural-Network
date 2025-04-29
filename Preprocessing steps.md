@@ -43,24 +43,24 @@ The following steps are applied to the raw lung sound signals before feature ext
 
 5.  **Short-Time Fourier Transform (STFT):**
     To extract spectral features, the STFT is computed from the normalized snippets $S_{norm}^t[n]$. The STFT $ST_{ls}[l, f]$ for frame $l$ and frequency $f$ is given by:
+    
+    *   please refer to the spectral_feature.png
    
     
-    $ST_{ls}[l, k]$ =$\sum_{n=0}^N_{win}-1 {S_norm}^t[n + lH] \cdot W[n] \cdot e^{-j \frac{2\pi nk}{N_{win}}} $
+    
   
     *   Note:  The version above is a more standard STFT definition where $W[n]$ is a window function (e.g., Hamming window of length $N_{win}=1024$), $H$ is the hop length (e.g., 512 samples), $l$ is the frame index, and $k$ is the frequency bin index, a Hamming window `W[n]` of size 1024 and an overlap length `H` of 512 samples.
 
 7.  **Mel Scale Conversion & Filterbank Application:**
     *   The Hertz frequencies ($f$) corresponding to the STFT bins are projected to the Mel scale ($f_{mel}$) using the formula:
-        ```math
-        f_{mel} = 2595 \cdot \log_{10}\left(1 + \frac{f}{700}\right)
-        \tag{6}
-        ```
+        
+        $f_{mel}$ = $2595 \cdot \log_{10}\left(1 + \frac{f}{700}\right)$
+       
     *   A Mel filterbank (e.g., 64 filters) is created based on the Mel scale.
     *   The Mel filterbank is applied to the magnitude (or power) of the STFT frames ($|ST_{ls}[l, k]|$ or $|ST_{ls}[l, k]|^2$) to produce Mel spectrogram features.
 
 8.  **Log Transformation:**
     A logarithmic transform is applied to the amplitudes of the Mel spectrogram to produce the log-scaled Mel spectrogram, which often better represents perceived loudness and compresses dynamic range.
 
-*(Optional Step mentioned)*
-8.  **Colormap Conversion:**
+    **Colormap Conversion:**
     For visualization or use with certain image-based models, the 2D log-Mel spectrograms can be converted to 3-channel images using a colormap like "jet".

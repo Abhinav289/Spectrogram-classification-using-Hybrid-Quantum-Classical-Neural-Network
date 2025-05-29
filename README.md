@@ -53,6 +53,7 @@ A **3-stage hybrid model**:
 
 ## Quantum Circuit Design
 !(./images/Screenshot (7).png)
+<img src="images/Screenshot (7).png" alt="Alt text" width="500"/>
 - Each of the 4 qubits is rotated using 2 parameters
 - Final measurement yields 16-dimensional probability vector
 - Example output: `P(|0110⟩)` = Probability that 2nd and 3rd qubit are in state |1⟩

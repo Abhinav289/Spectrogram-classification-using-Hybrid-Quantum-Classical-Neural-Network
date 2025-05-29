@@ -52,7 +52,7 @@ A **3-stage hybrid model**:
    - Fully connected layer maps quantum output to disease probabilities using softmax
 
 ## Quantum Circuit Design
-![Alt text for your image](./images/my_image.png)
+![Alt text for your image](./images/screenshot(7).png)
 - Each of the 4 qubits is rotated using 2 parameters
 - Final measurement yields 16-dimensional probability vector
 - Example output: `P(|0110⟩)` = Probability that 2nd and 3rd qubit are in state |1⟩

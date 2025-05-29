@@ -1,4 +1,4 @@
-# Lung-sound-classfication
+
 
 # 🫁 Quantum-Classical Neural Network for Respiratory Disease Classification
 

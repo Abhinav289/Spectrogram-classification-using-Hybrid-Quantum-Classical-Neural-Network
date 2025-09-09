@@ -13,14 +13,12 @@ Early diagnosis of respiratory illnesses is crucial due to their high global mor
 - **Source**: ICBHI 2017 Challenge Dataset or Respiratory Sound Database from Kaggle  
 - **Patients**: 126  
 - **Audio Files**: 920 
-- **Diagnosis Classes**: 6 
+- **Diagnosis Classes**: 6 but taken only 3 (COPD, Healthy, Pneumonia)
 
 Each audio file ranges from 10–90 seconds and has varying sampling rates.
-Main problem with the dataset: class imbalance 
+**Main problem with the dataset:** class imbalance 
 
 ## Data Preprocessing
-
-- **Resampling** to 4 KHz
 - **Snippet Generation**: Break long files into smaller time (6-sec) segments or snippets that contain crackles or wheezes.
 - **Baseline or DC Wandering Removal** using Discrete Fourier Transform (0–1 Hz noise eliminated)
 

@@ -74,10 +74,7 @@ Images/Screenshot (7).png
 - Example output: `P(|0110⟩)` = Probability that 2nd and 3rd qubit are in state |1⟩
 
 ## Results
-   Overall 
-- **Accuracy**: 95.66 %  
-- **Sensitivity**:  96.27 %
-- **Specificity**: 98.55 %
+<img src="./Images/Screenshot (7).png" alt="Alt text" width="500"/>
 
   
 ## Tools & Technologies

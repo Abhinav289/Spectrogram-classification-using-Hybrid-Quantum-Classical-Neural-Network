@@ -1,6 +1,6 @@
 
 
-# Quantum-Classical Neural Network for Respiratory Disease Classification
+# Hybrid Quantum-Classical Neural Network for Respiratory Disease Classification
 
 This project implements a **hybrid classical-quantum neural network** to detect respiratory diseases using **lung sound signals**. We used the ICBHI 2017 dataset and applied advanced audio preprocessing and data augmentation, followed by classification using quantum circuits integrated with deep learning.
 

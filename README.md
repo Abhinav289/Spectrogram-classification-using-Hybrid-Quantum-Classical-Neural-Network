@@ -4,7 +4,7 @@
 
 This project implements a **hybrid classical-quantum neural network** to detect respiratory diseases using **lung sound signals**. We used the ICBHI 2017 dataset and applied advanced audio preprocessing and data augmentation, followed by classification using quantum circuits integrated with deep learning.
 
-## Problem Statement
+## Motivation
 
 Early diagnosis of respiratory illnesses is crucial due to their high global mortality rate. Traditional methods often rely on manual auscultation. This project automates the classification of lung diseases based on sound signals using quantum machine learning.
 

@@ -74,7 +74,7 @@ Details:
 ## Tools & Technologies
 
 - **Language**: Python  
-- **Libraries**: NumPy,librosa, Matplotlib, Pandas
+- **Libraries**: NumPy,librosa, Matplotlib, Pandas, Librosa
 - **Deep Learning framework**: PyTorch  
 - **Quantum ML**: Qiskit
 - **Concepts**: Variational Auto Encoder, MLP, Parameterized Quantum Circuit (PQC), Paramter-shift rule, Quantum gates( Hadamard, RX,RY,RZ, CNOT)
